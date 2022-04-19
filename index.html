@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taro</title>
+    <link rel="icon" href="images/taro.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="taro-navbar w-full fixed h-auto navbar top-0 inset-x-0">
+        <div class="taro-menu justify-between content-center py-8">
+            <div class="container mx-auto flex flex-row ">
+                <!-- menu mobile tablet-->
+                <div class="absolute md:hidden py-3 sm:ml-8 ml-4">
+                    <label class="menu-mobile-tablet cursor-pointer"><img src="images/menu.png"></label>
+                    <label class="overlay-mobile-tablet hidden inset-0 fixed"></label>
+                    <nav class="header-menu_mobile-tablet hidden fixed inset-y-0 left-0 bg-black w-64">
+                        <ul class="block justify-end text-white items-center py-16 px-8">
+                            <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8 h-8 leading-8 mb-2">Trang chủ</li>
+                            <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8 h-8 leading-8 mb-2">Taro là gì?</li>
+                            <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8 h-8 leading-8 mb-2">Góp ý</li>
+                            <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8 h-8 leading-8 mb-2 mt-16 mb-4">
+                                <a href="" class="cursor-pointer rounded py-2 px-6 bg-gradient-to-r from-pink-400 via-pink-500 to-red-500">Taro <small class="text-sm">wiki</small></a>
+
+                            </li>
+                            <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8 mb-4">
+                                <a href="">
+                                    <img src="images/taro-CHPlay.png" alt="CHPlay" class="w-28 cursor-pointer">
+                                </a>
+                            </li>
+                            <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8 mb-4">
+                                <a href="">
+                                    <img src="images/taro-AppStore.png" alt="AppStore" class="w-28 cursor-pointer">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="taro-logo lg:w-1/3 md:w-1/4 sm:w-full w-full">
+                    <img src="images/taro-logo.png" alt="Taro logo" class="w-36 md:ml-0 sm:mx-auto mx-auto" />
+                </div>
+                <div class="taro-nav-right md:flex lg:flex lg:w-2/3 md:w-3/4 text-sm md:text-base md:text-xl sm:hidden hidden">
+                    <ul class="flex justify-end text-white flex-row items-center">
+                        <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8">Trang chủ</li>
+                        <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8">Taro là gì?</li>
+                        <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8">Góp ý</li>
+                        <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8">
+                            <a href="" class="cursor-pointer rounded py-2 px-6 bg-gradient-to-r from-pink-400 via-pink-500 to-red-500">Taro <small class="text-sm">wiki</small></a>
+                        </li>
+                        <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8">
+                            <a href="">
+                                <img src="images/taro-CHPlay.png" alt="CHPlay" class="w-28 cursor-pointer">
+                            </a>
+                        </li>
+                        <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8">
+                            <a href="">
+                                <img src="images/taro-AppStore.png" alt="AppStore" class="w-28 cursor-pointer">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <section class="taro-banner">
+        <div data-aos="zoom-out" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0" class="taro-background relative bg-contain h-screen overflow-hidden">
+            <div data-aos="zoom-in-up" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0" class="taro-banner-content absolute top-1/4 md:w-2/3 justify-center mx-auto inset-x-0 text-white z-50">
+                <div class="banner-title flex justify-center content-center text-base items-center md:text-4xl whitespace-nowrap font_LinotteBold ">
+                    TÌM THẤY
+                    <h1 class="md:text-6xl md:mx-8 text-2xl"> ÁNH SÁNG </h1> TÂM HỒN
+                </div>
+                <div class="font_LinotteLight banner-content mx-auto text-center justify-center w-full content-center items-center flex-row md:text-2xl mt-8 sm:px-8 px-2">
+                    <p>Nếu như mỗi chúng ta đều là những thực thể tâm linh được tạo ra từ ánh sáng tràn đầy yêu thương của Nguồn, của Vũ Trụ, vậy ánh sáng của bạn sẽ là màu gì nhỉ? Trên hành trình thắp lên ánh sáng của bản thân, soi sáng đường bạn đi, hãy
+                        để những ánh quang khác cùng cộng hưởng với bạn. Hãy để TARO có thể đi cùng bạn. Và cùng nhau, chúng ta tìm về với chân ngã của chúng mình.
+                    </p>
+                </div>
+                <div class="banner-logo_download flex justify-center mt-8">
+                    <img class="w-40" src="images/taro-CHPlay.png" alt="CHPlay">
+                    <img class="w-40 ml-4" src="images/taro-AppStore.png" alt="AppStore">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="xl:container flex justify-center xl:mx-auto md:container md:mx-auto mt-16">
+            <div class="taro-wiki-page container mx-auto mb-40">
+                <img src="images/taro-line.png" alt="" data-aos="fade-down" data-aos-duration="500" class="img-ss2-responsive w-271 block m-auto mt-4 mb-8 aos-init aos-animate">
+                <p data-aos="fade-down" class="text-center  ss2-text-header text-base md:text-xl  aos-init aos-animate">
+                    Gia nhập cộng đồng những người đam mê Tarot để cùng nhau trao đổi, truyền cảm hứng và học tập. <br> Có đôi khi, một câu nói của bạn chính là chìa khóa, là nguồn động lực tiến về phía ánh sáng của rất nhiều những tâm hồn khác
+                </p>
+                <div class="my-24 text-center aos-init aos-animate" data-aos="fade-up">
+                    <a class="px-7 secsion2-taro-wiki py-3.5 px-16 bg-gradient-to-r hover:from-pink-300 hover:via-pink-500 hover:to-red-500 hover:text-white hover:border-white cursor-pointer" href="https://wiki.taroapp.net/search" target="_blank">
+                  TARO&nbsp;<span class="text-lg">wiki</span>
+                </a>
+                </div>
+
+                <div data-aos="zoom-in-up" data-aos-duration="500" class="flex justify-center relative mt-0 md:mt-8 lg:mt-12 aos-init">
+                    <img src="images/taro-pavilion.png" alt="" class="w-full md:w-2/3 lg:w-1/2 mx-auto pl-16">
+                    <div class="absolute content-center flex flex-col justify-center inset-0">
+                        <img src="images/taro-pavilion-primary.png" alt="" class="w-16 mx-auto">
+                        <p class="ss2-text-center text-4xl text-center leading-none mt-8">
+                            Điều gì tạo nên TARO khác biệt?
+                        </p>
+                    </div>
+                </div>
+                <div class="w-5/6 flex color-text-taro mx-auto flex-col md:flex-row">
+                    <div data-aos="zoom-in-down" data-aos-duration="500" class="flex flex-col w-full lg:w-1/3 justify-center text-center mx-0 mt-8 md:mt-0 px-4 md:px-0 md:mx-8 aos-init">
+                        <div class="w-1/3 mx-auto flex justify-center">
+                            <img class="w-7/12" src="images/taro-experience.png" alt="Taro thư viện tarot online">
+                        </div>
+                        <div class="text-base md:text-xl my-8 taro--text--type__linotte-light">
+                            Một cuốn từ điển ma thuật nhỏ tiện dụng, có thể mang đi mọi lúc mọi nơi.
+                        </div>
+                        <div>
+                            <button class="rounded-full text-base md:text-xl border-2 border-green-900 py-2 bg-gradient-to-r hover:from-pink-300 hover:via-pink-500 hover:to-red-500 hover:text-white hover:border-white px-8 taro--text--type__linotte-bold">
+                        THƯ VIỆN KỸ THUẬT SỐ
+                        </button>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in-down" data-aos-duration="500" class="flex flex-col w-full lg:w-1/3 justify-center text-center mx-0 mt-8 md:mt-0 px-4 md:px-0 md:mx-8 aos-init">
+                        <div class="w-1/3 mx-auto">
+                            <img src="images/taro-deck-collection.png" alt="Taro thư viện tarot online">
+                        </div>
+                        <div class="text-base md:text-xl my-8 taro--text--type__linotte-light">
+                            Thư viện khủng các bài học thú vị, cùng nhiều bộ bài với phong cách nghệ thuật khác nhau
+                        </div>
+                        <div>
+                            <button class="rounded-full text-base md:text-xl border-2 border-green-900 py-2 bg-gradient-to-r hover:from-pink-300 hover:via-pink-500 hover:to-red-500 hover:text-white hover:border-white px-8 taro--text--type__linotte-bold">
+                      BỘ SƯ TẬP BỘ BÀI
+                    </button>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in-down" data-aos-duration="500" class="flex flex-col w-full lg:w-1/3 justify-center text-center mx-0 mt-8 md:mt-0 px-4 md:px-0 md:mx-8 aos-init">
+                        <div class="w-1/3 mx-auto">
+                            <img src="images/taro-wisdom.png" alt="Taro thư viện tarot online">
+                        </div>
+                        <div class="text-base md:text-xl my-8 taro--text--type__linotte-light">
+                            Tìm hiểu về chính mình, đối mặt với bóng tối của linh hồn.
+                        </div>
+                        <div>
+                            <button class="rounded-full text-base md:text-xl border-2 border-green-900 py-2 bg-gradient-to-r hover:from-pink-300 hover:via-pink-500 hover:to-red-500 hover:text-white hover:border-white px-8 taro--text--type__linotte-bold">
+                      TRÍ THỨC
+                    </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-5/6 flex flex-col md:flex-row color-text-taro mx-auto justify-center mt-12">
+                    <div data-aos="zoom-in-down" data-aos-duration="500" class="flex flex-col w-full md:w-1/3 justify-center text-center mx-0 mt-8 md:mt-0 px-4 md:px-0 md:mx-8 aos-init">
+                        <div class="w-1/3 mx-auto">
+                            <img class="w-5/6" src="images/taro-reading.png" alt="Taro thư viện tarot online">
+                        </div>
+                        <div class="text-base md:text-xl my-8 taro--text--type__linotte-light">
+                            Người thầy - bạn đồng hành giúp hiểu hơn về phần vô thức của mình
+                        </div>
+                        <div>
+                            <button class="rounded-full text-base md:text-xl border-2 border-green-900 py-2 bg-gradient-to-r hover:from-pink-300 hover:via-pink-500 hover:to-red-500 hover:text-white hover:border-white px-8 taro--text--type__linotte-bold">
+                      HƯỚNG DẪN TRẢI BÀI
+                    </button>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in-down" data-aos-duration="500" class="flex flex-col w-full md:w-1/3 justify-center text-center mx-0 mt-8 md:mt-0 px-4 md:px-0 md:mx-8 aos-init">
+                        <div class="w-1/3 mx-auto">
+                            <img src="images/taro-community.png" alt="Taro thư viện tarot online">
+                        </div>
+                        <div class="text-base md:text-xl my-8 taro--text--type__linotte-light">
+                            Môi trường học hỏi và kết nối của những người đam mê Tarot.
+                        </div>
+                        <div>
+                            <button class="rounded-full text-base md:text-xl border-2 border-green-900 py-2 bg-gradient-to-r hover:from-pink-300 hover:via-pink-500 hover:to-red-500 hover:text-white hover:border-white px-8 taro--text--type__linotte-bold">
+                      CỘNG ĐỒNG
+                    </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="taro-slide_favorite relative flex bg-cover bg-center bg-no-repeat object-fill">
+        <div class="container mx-auto py-36">
+            <div data-aos="fade-up" class="slide_favorite-title flex font_LinotteBold text-white items-center justify-center text-center mb-20 md:text-base lg:text-2xl">
+                TÌM THẤY
+                <h1 class="text-xl md:text-2xl lg:text-5xl mx-2">BỘ BÀI TAROT</h1> YÊU THÍCH
+            </div>
+            <div data-aos="fade-up" class="slide_favorite-content swiper z-40 mb-32">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide items-center text-center justify-center flex">
+                        <a href="#">
+                            <img loading="lazy" src="images/wiki-deck-1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide items-center text-center justify-center flex">
+                        <a href="#">
+                            <img loading="lazy" src="images/wiki-deck-2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide items-center text-center justify-center flex">
+                        <a href="#">
+                            <img loading="lazy" src="images/wiki-deck-3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide items-center text-center justify-center flex">
+                        <a href="#">
+                            <img loading="lazy" src="images/wiki-deck-4.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide items-center text-center justify-center flex">
+                        <a href="#">
+                            <img loading="lazy" src="images/wiki-deck-5.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide items-center text-center justify-center flex">
+                        <a href="#">
+                            <img loading="lazy" src="images/wiki-deck-6.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-next z-50 button-next text-white"></div>
+                <div class="swiper-button-prev z-50 button-prev text-white"></div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-24">
+        <div class="container mx-auto flex justify-between flex-col">
+            <div data-aos="fade-right" class="text-center">
+                <button class="text-2xl lg:text-5xl rounded-full font-family-linotte-bold shadow-2xl  pt-6 p-4 px-16 mb-4 md:mb-16 lg:mb-36 aos-init aos-animate">
+                  TÍNH NĂNG CỦA TARO
+              </button>
+            </div>
+            <ul class="flex flex-col md:flex-row md:flex-wrap mx-auto text-center w-5/6 aos-init aos-animate" data-aos="zoom-in-up" data-aos-duration="500">
+                <li class="w-5/6 px-0 mx-auto mt-16 md:mt-0 md:px-0 md:w-1/2 lg:w-1/4 flex flex-col">
+                    <div class="w-1/3 mx-auto">
+                        <img loading="lazy" class="w-5/6 mx-auto" src="images/taro-three.png" alt="">
+                    </div>
+                    <div class="text-2xl mt-4 mb-7 taro--text--type__linotte-bold">
+                        THÔNG ĐIỆP HÀNG NGÀY
+                    </div>
+                    <div class="text-base taro--text--type__linotte-light md:text-xl">
+                        Gửi thông điệp, câu chuyện và đưa ra các giải pháp về cuộc sống hàng ngày các vấn đề cụ thể của bạn.
+                    </div>
+                </li>
+                <li class="w-5/6 px-0 mx-auto mt-16 md:mt-0 md:px-0 md:w-1/2 lg:w-1/4 flex flex-col aos-init aos-animate">
+                    <div class="w-1/3 mx-auto">
+                        <img loading="lazy" class="w-5/6 mx-auto" src="images/taro-app-library.png" alt="">
+                    </div>
+                    <div class="text-2xl my-8 taro--text--type__linotte-bold">
+                        THƯ VIỆN TAROT
+                    </div>
+                    <div class="text-base taro--text--type__linotte-light md:text-xl">
+                        Kho thư viện gồm hơn 15 nghìn lá bài Tarot &amp; Oracle, một nguồn tài nguyên của trí tuệ đa văn hóa
+                    </div>
+                </li>
+                <li class="w-5/6 px-0 mx-auto mt-16 md:mt-0 md:px-0 md:w-1/2 lg:w-1/4 flex flex-col aos-init aos-animate">
+                    <div class="w-1/3 mx-auto">
+                        <img loading="lazy" class="w-5/6 mx-auto" src="images/taro-app-journal.png" alt="">
+                    </div>
+                    <div class="text-2xl my-8 taro--text--type__linotte-bold">
+                        NHẬT KÝ HÀNG NGÀY
+                    </div>
+                    <div class="text-base taro--text--type__linotte-light md:text-xl">
+                        Kể chuyện, nhật ký hàng ngày, theo dõi cảm xúc, chia sẻ với cộng đồng
+                    </div>
+                </li>
+                <li class="w-5/6 px-0 mx-auto mt-16 md:mt-0 md:px-0 md:w-1/2 lg:w-1/4 flex flex-col aos-init aos-animate">
+                    <div class="w-1/3 mx-auto">
+                        <img loading="lazy" class="w-5/6 mx-auto" src="images/taro-app-prisma.png" alt="">
+                    </div>
+                    <div class="text-2xl my-8 taro--text--type__linotte-bold">
+                        PRISM
+                    </div>
+                    <div class="text-base taro--text--type__linotte-light md:text-xl">
+                        Tự trang điểm bằng nghệ thuật, dựa trên phong cách chủ đề bộ bài yêu thích
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img loading="lazy" src="images/taro-bg-app-feature.png" alt="">
+        </div>
+    </section>
+    <section class="bg-center relative h-full mt-32">
+        <div class="container mx-auto items-center md:items-start flex-col w-2/3">
+            <button class="font-family-linotte-bold font-semibold rounded-full text-2xl lg:text-5xl shadow-2xl p-4 px-16 aos-init aos-animate" data-aos="zoom-in" data-aos-duration="500">
+              Thông điệp ngày mới
+            </button>
+            <p class="text-base font-family-linotte-bold font-semibold md:text-2xl px-4 md:px-0 w-full md:w-1/2 my-6 md:mt-16 color-text-taro text-center md:text-right aos-init aos-animate" data-aos="zoom-in" data-aos-duration="500">
+                Bắt đầu ngày mới với những dự định, kế hoạch, hướng dẫn và thông điệp ý nghĩa từ Vũ Trụ cho chính bạn.</p>
+        </div>
+        <div class="flex flex-col bg-no-repeat h-5/6 taro-daily-footer object-cover" style="background-image: url('images/taro-app-reading.png');">
+            <div class="flex flex-col md:flex-col items-center">
+                <div data-aos="fade-up" class=" pt-12 flex flex-row my-4 md:my-32 mb-32 mx-auto bottom-0 justify-between w-4/6">
+                    <div class="max-w-full sm:w-3/4 z-10">
+                        <div class="swiper-container h-full swiper-init">
+                            <div class="slide_favorite-content-ssfive slide overflow-hidden z-40 mb-32">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper-slide-ssfive flex items-center w-80">
+                                        <img loading="lazy" src="images/taro-daily-screen-3-1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-ssfive flex items-center w-80">
+                                        <img loading="lazy" src="images/taro-daily-screen-3-2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-ssfive flex items-center w-80">
+                                        <img loading="lazy" src="images/taro-daily-screen-3-3.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-ssfive flex items-center w-80">
+                                        <img loading="lazy" src="images/taro-daily-screen-3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next button-next z-50 text-white"></div>
+                                <div class="swiper-button-prev button-prev z-50 text-white"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex hidden md:block -ml-16 w-3/5 -mt-60 z-50 ">
+                        <img loading="lazy" class="relative  ssfive-big" src="images/taro-daily-screen.png" alt="Taro nhật ký hàng ngày taro daily screen">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="taro-library mt-32 relative">
+        <div class="taro-library_header container flex flex-col md:flex-row mx-auto mb-8 sm:items-center items-center">
+            <div data-aos="flip-left" class="taro-library_header-download flex justify-end w-1/3 md:mt-32 md:items-end mb-32">
+                <a href="">
+                    <img loading="lazy" class="w-40 cursor-pointer" src="images/taro-AppStore-dark.png" alt="AppStore">
+                </a>
+                <a class="ml-4" href="">
+                    <img loading="lazy" class="w-40 cursor-pointer" src="images/taro-CHPlay-dark.png" alt="">
+                </a>
+            </div>
+            <div data-aos="flip-right" class="taro-library_header-content w-2/3 text-center flex flex-col my-8 md:items-end">
+                <div class="taro-library_title-btn">
+                    <button class="text-2xl lg:text-5xl rounded-full shadow-2xl p-4 px-16 font_LinotteBold">Thư viện cách trả bài</button>
+                </div>
+                <div class="taro-library_body-content">
+                    <p class="text-base text-center md:text-2xl md:px-0 md:text-right md:px-4 px-4 mt-16 font_LinotteSemiBold color_text-green">Bạn có thể lập một phiên trải bài hoàn hảo ngay trên chiếc điện thoại ở mọi lúc, với lựa chọn rút bài ngẫu nhiên ngay trên ứng dụng TARO, hoặc chọn lá bài để bỏ vào vị trí phù hợp. Và rồi, một phiên trải bài tarot chuyên nghiệp, dễ
+                        tiếp cận được tạo ra, bởi chính bạn.</p>
+                </div>
+            </div>
+        </div>
+        <div class="taro-library_body h-screen  bg-cover bg-no-repeat relative max-w-full z-10 py-64">
+            <div data-aos="fade-up" class="slide_librarys-content swiper-librarys z-20 overflow-hidden max-x-full my-8">
+                <div class="swiper-wrapper items-center z-50">
+                    <div class="swiper-slide items-center text-center justify-center flex">
+                        <a href="#">
+                            <img loading="lazy" src="images/taro-spread-1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide items-center text-center justify-center flex">
+                        <a href="#">
+                            <img loading="lazy" src="images/taro-spread-2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide items-center text-center justify-center flex">
+                        <a href="#">
+                            <img loading="lazy" src="images/taro-spread-3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide items-center text-center justify-center flex">
+                        <a href="#">
+                            <img loading="lazy" src="images/taro-spread-4.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide items-center text-center justify-center flex">
+                        <a href="#">
+                            <img loading="lazy" src="images/taro-spread-1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide items-center text-center justify-center flex">
+                        <a href="#">
+                            <img loading="lazy" src="images/taro-spread-2.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-next button-next z-50 text-white"></div>
+                <div class="swiper-button-prev button-prev z-50 text-white"></div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-center relative h-full mt-32">
+        <div class="container mx-auto items-center md:items-start flex-col w-2/3">
+            <button class="font-family-linotte-bold font-semibold rounded-full text-2xl lg:text-5xl color-text-taro shadow-2xl p-4 px-16 aos-init aos-animate" data-aos="zoom-in" data-aos-duration="500">
+            Khơi nguồn sáng tạo cùng PRISMA
+          </button>
+            <p class="text-base font-semibold font-family-linotte-bold md:text-2xl px-4 md:px-0 w-full md:w-1/2 my-6 md:mt-16 color-text-taro text-center md:text-right aos-init aos-animate" data-aos="zoom-in" data-aos-duration="500">
+                Là một người đam mê tarot, có bao giờ bạn nghĩ về việc bước chân vào thế giới nghệ thuật ấy? Prisma của TARO sẽ giúp bạn làm điều đó!
+            </p>
+        </div>
+        <div class="flex flex-col bg-no-repeat h-5/6  taro-daily-footer object-cover" style="background-image: url('images/taro-bg-prisma.png');">
+            <div class="flex flex-col md:flex-col items-center">
+                <div class="pt-12 flex flex-row my-4 md:my-32 mx-auto bottom-0 justify-between w-4/6">
+                    <div class="max-w-full md:w-3/4 z-10">
+                        <div data-aos="fade-up" class="swiper-container swiper-init">
+                            <div class="slide_favorite-content-sssix slideSix overflow-hidden z-40">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper-slide-sssix flex items-center w-80">
+                                        <img loading="lazy" src="images/taro-reading-1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-sssix flex items-center w-80">
+                                        <img loading="lazy" src="images/taro-reading-2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-sssix flex items-center w-80">
+                                        <img loading="lazy" src="images/taro-reading-3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next button-next z-50 text-white"></div>
+                                <div class="swiper-button-prev button-prev z-50 text-white"></div>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" class="mt-8 mb-16 text-center flex justify-center">
+                            <div class="">
+                                <a href="https://play.google.com/store/apps/details?id=com.swallow.taroapp" target="_blank">
+                                    <img loading="lazy" src="images/taro-CHPlay.png" alt="Download Taro App in CH Play" class="w-40 cursor-pointer">
+                                </a>
+                            </div>
+                            <div class="ml-4">
+                                <a href="https://apps.apple.com/vn/app/taro/id1547629091">
+                                    <img loading="lazy" src="images/taro-AppStore.png" alt="Download Taro App in Appstore" class="w-40 cursor-pointer">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="flex hidden md:block -ml-16 w-3/5 -mt-80 z-50 ">
+                        <img loading="lazy" class="relative  sssix-big" src="images/daily-reading.png" alt="Taro nhật ký hàng ngày taro daily screen">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="taro-story mt-32">
+            <div class="container flex mx-auto flex-col md:flex-row w-2/3">
+                <div class="w-full md:w-2/3 aos-init aos-animate" data-aos="fade-up-down" data-aos-duration="500">
+                    <img loading="lazy" src="images/taro-story.png" alt="" class="mx-auto md:mx-0 w-9/12">
+                </div>
+                <div class="w-full md:w-1/3 mx-auto flex items-center md:justify-center flex-col aos-init aos-animate">
+                    <button data-aos="fade-up" data-aos-duration="500" class="text-2xl font-semibold lg:text-5xl rounded-full color-text-taro shadow-2xl p-4 px-16 font-family-linotte-bold">
+                  Bạn có câu chuyện để kể
+                  </button>
+                    <p data-aos="fade-up" data-aos-duration="500" class="font-semibold color-text-taro text-base md:text-2xl mt-16 mb-8 text-center md:text-center w-full">
+                        Khác với những ứng dụng tarot khác, <b class="font-family-linotte-bold">TARO</b> thật sự là một người bạn. <br> Và còn là có một cuốn journal để có thể viết và lưu lại hành trình tuyệt vời của mình đấy nhé!
+                    </p>
+
+                </div>
+            </div>
+            <div class="mt-8 text-center flex justify-center w-full items-center  md:items-end justify-center">
+                <div data-aos="fade-up" data-aos-duration="500" class="">
+                    <img loading="lazy" src="images/taro-CHPlay-dark.png" alt="Download Taro App in CH Play" class="w-40 cursor-pointer">
+                </div>
+                <div data-aos="fade-up" data-aos-duration="500" class="ml-4">
+                    <img loading="lazy" src="images/taro-AppStore-dark.png" alt="Download Taro App in Appstore" class="w-40 cursor-pointer">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="taro-card container relative z-50 mx-auto my-24">
+        <div class="taro-card_header text-center mx-auto">
+            <div data-aos="flip-left" class="taro-card_header-logo">
+                <img class="mx-auto w-40 object-contain	" src="images/taro-logo-dark.png" alt="Taro">
+            </div>
+            <div data-aos="flip-right" class="taro-card_header-title font_LinotteSemiBold color_text-green text-xl md:text-3xl mt-4 md:mt-8">
+                <h1>HEAR OUT OUR BELOVED USERS</h1>
+            </div>
+        </div>
+        <div class="taro-card_body mt-32">
+            <div class="container block sm:block md:flex font_LinotteLight color_text-green">
+                <div data-aos="fade-up" class="taro-card_body-element md:rounded-2xl md:px-0 md:mx-1 lg:m-8 lg:px-6 lg:py-2 md:flex md:h-full md:flex-col text-center border border-solid border-transparent shadow-2xl w-1/3 sm:w-11/12 sm:mx-auto sm:px-0 w-11/12 mx-auto px-12">
+                    <div class="taro-card_body-element-img md:-mt-12 md:mb-12 relative lg:-top-1/3 border border-solid rounded-full border-transparent overflow-hidden w-28 h-28 mx-auto sm:-mt-12 sm:mb-20 -mt-12 mb-20">
+                        <img class="h-full w-full items-center object-cover" src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg" alt="">
+                    </div>
+                    <div class="taro-card_body-element-description relative px-4 -top-16 mt-6 md:text-xl">
+                        <p>A journal in need is a friend in deed! Note down your insightful thoughts everywhere and anytime, your portable journal is now in your pocket!
+                        </p>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="taro-card_body-element md:rounded-2xl md:px-0 md:mx-1 lg:m-8 lg:px-6 lg:py-2 md:flex md:h-full md:flex-col text-center border border-solid border-transparent shadow-2xl w-1/3 sm:w-11/12 sm:mx-auto sm:px-0 w-11/12 mx-auto px-12 sm:my-24 my-24">
+                    <div class="taro-card_body-element-img md:-mt-12 md:mb-12 relative lg:-top-1/3 border border-solid rounded-full border-transparent overflow-hidden w-28 h-28 mx-auto sm:-mt-12 sm:mb-20 -mt-12 mb-20">
+                        <img class="h-full w-full items-center object-cover" src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg" alt="">
+                    </div>
+                    <div class="taro-card_body-element-description relative px-4 -top-16 mt-6 md:text-xl">
+                        <p>A journal in need is a friend in deed! Note down your insightful thoughts everywhere and anytime, your portable journal is now in your pocket!
+                        </p>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="taro-card_body-element md:rounded-2xl md:px-0 md:mx-1 lg:m-8 lg:px-6 lg:py-2 md:flex md:h-full md:flex-col text-center border border-solid border-transparent shadow-2xl w-1/3 sm:w-11/12 sm:mx-auto sm:px-0 w-11/12 mx-auto px-12">
+                    <div class="taro-card_body-element-img md:-mt-12 md:mb-12 relative lg:-top-1/3 border border-solid rounded-full border-transparent overflow-hidden w-28 h-28 mx-auto sm:-mt-12 sm:mb-20 -mt-12 mb-20">
+                        <img class="h-full w-full items-center object-cover" src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg" alt="">
+                    </div>
+                    <div class="taro-card_body-element-description relative px-4 -top-16 mt-6 md:text-xl">
+                        <p>A journal in need is a friend in deed! Note down your insightful thoughts everywhere and anytime, your portable journal is now in your pocket!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="taro-footer bg-cover md:bg-cover sm:bg-cover">
+        <div class="container relative flex md:flex flex-col md:flex-row h-auto mx-auto py-16 font_LinotteLight text-base sm:py-16 sm:block">
+            <div class="footer-contact w-full md:w-1/3 px-4 md:px-2 sm:w-full">
+                <div class="footer-contact_title text-center text-white mb-8 font-bold whitespace-nowrap">
+                    <h1 class="text-xl">Liên hệ với TARO</h1>
+                </div>
+                <div class="footer-contact_body">
+                    <form class="flex flex-col">
+                        <input class="bg-transparent border-b border-solid border-white h-10 pl-2 mb-4 leading-6" type="email" placeholder="Email" name="email">
+                        <input class="bg-transparent border-b border-solid border-white h-10 pl-2 mb-4 leading-6" type="text" placeholder="Nội dung..." name="content">
+                        <button class="bg-white w-24 leading-6 h-10 rounded-full font-bold m-auto mt-4" type="submit">Gửi</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-infor w-full md:w-2/3 sm:w-full sm:mt-16 md:mt-8 mt-8">
+                <div class="footer-infor_logo">
+                    <img class="mx-auto w-1/2" src="images/taro-logo.png" alt="Taro">
+                </div>
+                <div class="footer-infor_social mt-12 md:mt-20">
+                    <ul class="block md:flex flex-nowrap justify-evenly sm:block">
+                        <li class="whitespace-nowrap">
+                            <a class="sm:justify-center flex mr-12 text-white leading-8 h-8" href="">
+                                <img class="mr-4 ml-24 md:mr-1 md:ml-0 lg:mr-8 lg:ml-12" src="images/taro-ic-earth.png" alt=""> www.taroapp.net
+                            </a>
+                        </li>
+                        <li class="whitespace-nowrap md:border-none lg:border-l lg:border-r lg:border-solid lg:border-white sm:border-none my-4 sm:my-8 md:my-0">
+                            <a class="sm:justify-center flex mr-12 text-white leading-8 h-8" href="">
+                                <img class="mr-4 ml-24 md:mr-1 md:ml-0 lg:mr-8 lg:ml-12" src="images/taro-ic-fb.png" alt=""> Taro Station
+                            </a>
+                        </li>
+                        <li class="whitespace-nowrap">
+                            <a class="sm:justify-center flex mr-6 text-white leading-8 h-8" href="">
+                                <img class="mr-4 ml-24 md:mr-1 md:ml-0 lg:mr-8 lg:ml-12" src="images/taro-ic-ins.png" alt=""> @taro.station
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

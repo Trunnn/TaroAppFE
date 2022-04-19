@@ -1,0 +1,422 @@
+/* root */
+
+@font-face {
+    font-family: "r0c0i Linotte Bold";
+    src: url("../fonts/r0c0iLinotte-Bold.woff2") format("woff2"), url("../fonts/r0c0iLinotte-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "r0c0i Linotte Heavy";
+    src: url("../fonts/r0c0iLinotte-Heavy.woff2") format("woff2"), url("../fonts/r0c0iLinotte-Heavy.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "r0c0i Linotte Regular";
+    src: url("../fonts/r0c0iLinotte-Regular.woff2") format("woff2"), url("../fonts/r0c0iLinotte-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "r0c0i Linotte Light";
+    src: url("../fonts/r0c0iLinotte-Light.woff2") format("woff2"), url("../fonts/r0c0iLinotte-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "r0c0i Linotte SemiBold";
+    src: url("../fonts/r0c0iLinotte-SemiBold.woff2") format("woff2"), url("../fonts/r0c0iLinotte-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap
+}
+
+.font_LinotteBold {
+    font-family: 'r0c0i Linotte Bold';
+}
+
+.font_LinotteLight {
+    font-family: 'r0c0i Linotte Light';
+}
+
+.font_LinotteSemiBold {
+    font-family: 'r0c0i Linotte SemiBold';
+}
+
+.color_bg-navbar {
+    background-color: #004755;
+}
+
+.color_text-green {
+    color: #1A4144;
+}
+
+
+/* body */
+
+.taro-navbar {
+    z-index: 1000;
+}
+
+.taro-background {
+    background-image: url(../images/taro-bg-banner.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.secsion2-taro-wiki {
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    background-color: rgb(28, 63, 66);
+    color: rgb(249, 250, 251);
+    font-size: 20px;
+    font-family: "r0c0i Linotte Bold";
+}
+
+.ss2-text-header {
+    font-family: "r0c0i Linotte Light";
+    color: rgb(17, 65, 70);
+}
+
+.ss2-text-center {
+    font-family: "r0c0i Linotte Bold";
+    color: rgb(17, 65, 70);
+}
+
+.color-text-taro {
+    color: rgb(17, 65, 70);
+}
+
+.font-family-linotte-bold {
+    font-family: "r0c0i Linotte Bold";
+}
+
+.taro-daily-footer {
+    background-size: 100% 100%;
+}
+
+
+/* menu navbar mobile tablet */
+
+.nav-input-check:checked~.overlay-mobile-tablet {
+    display: block;
+}
+
+.nav-input-check:checked~.header-menu_mobile-tablet {
+    transform: translateX(0);
+}
+
+@keyframes slowElement {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.overlay-mobile-tablet {
+    background-color: rgba(0, 0, 0, 0.6);
+    animation: slowElement linear 0.2s;
+    -webkit-animation: slowElement linear 0.2s;
+    z-index: 100;
+}
+
+.header-menu_mobile-tablet {
+    z-index: 5000;
+}
+
+
+/* taro slide favorite */
+
+.taro-slide_favorite {
+    background-image: url(../images/taro-bg-deck.png)
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 760px) {
+    .swiper-button-next {
+        right: 20px;
+        transform: rotate(90deg);
+    }
+    .swiper-button-prev {
+        left: 20px;
+        transform: rotate(90deg);
+    }
+}
+
+@media (min-width: 1536px) {
+    .taro-slide_favorite .container {
+        max-width: 1280px;
+    }
+}
+
+.swiper-slide img {
+    width: 70% !important;
+    margin: 0 auto;
+}
+
+.slide_favorite-content .swiper-slide-active img {
+    width: 100% !important;
+}
+
+.slide_favorite-content {
+    height: 50%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: unset;
+}
+
+
+/* section taro library */
+
+.taro-library_body {
+    background-image: url(../images/taro-bg-spread.png)
+}
+
+.slide_librarys-content .swiper-slide-active img {
+    width: 100% !important;
+}
+
+.taro-library_body {
+    height: max-content;
+}
+
+.slide_librarys-content .swiper-button-next,
+.slide_librarys-content .swiper-button-prev {
+    font-size: xx-large;
+    transform: none!important;
+    -webkit-transform: none!important;
+    -moz-transform: none!important;
+    -ms-transform: none!important;
+    -o-transform: none!important;
+}
+
+.slide_favorite-content .swiper-button-next,
+.slide_favorite-content .swiper-button-prev {
+    transform: none!important;
+    -webkit-transform: none!important;
+    -moz-transform: none!important;
+    -ms-transform: none!important;
+    -o-transform: none!important;
+}
+
+.slide_librarys-content .swiper-button-next:after,
+.slide_librarys-content .swiper-button-prev:after {
+    font-size: xx-large;
+    transform: none!important;
+    -webkit-transform: none!important;
+    -moz-transform: none!important;
+    -ms-transform: none!important;
+    -o-transform: none!important;
+}
+
+.slide_favorite-content-ssfive .swiper-button-next:after,
+.slide_favorite-content-ssfive .swiper-button-prev:after {
+    font-size: xx-large;
+    transform: none!important;
+    -webkit-transform: none!important;
+    -moz-transform: none!important;
+    -ms-transform: none!important;
+    -o-transform: none!important;
+}
+
+.slide_favorite-content-ssfive .swiper-button-next {
+    position: absolute;
+    right: -10%;
+    transform: none!important;
+    -webkit-transform: none!important;
+    -moz-transform: none!important;
+    -ms-transform: none!important;
+    -o-transform: none!important;
+}
+
+.slide_favorite-content-ssfive .swiper-button-prev {
+    position: absolute;
+    left: -10%;
+    transform: none !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+}
+
+.slide_favorite-content-sssix .swiper-button-next,
+.slide_favorite-content-sssix .swiper-button-prev {
+    transform: none!important;
+    -webkit-transform: none!important;
+    -moz-transform: none!important;
+    -ms-transform: none!important;
+    -o-transform: none!important;
+}
+
+
+/* section5 */
+
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide-ssfive {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 320px !important;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    /* margin: 0 27px; */
+}
+
+@media (max-width: 760px) {
+    .swiper-button-next {
+        right: 50px;
+        transform: rotate(90deg);
+        font-size: 50px!important;
+    }
+    .swiper-button-prev {
+        left: 50px;
+        transform: rotate(90deg);
+        font-size: 50px!important;
+    }
+}
+
+@media (min-width: 1536px) {
+    .slide_favorite-content-ssfive .container {
+        max-width: 1280px;
+    }
+    .slide_favorite-content-sssix.container {
+        max-width: 1280px;
+    }
+}
+
+.swiper-slide-ssfive img {
+    width: 70% !important;
+    margin: 0 auto;
+}
+
+.slide_favorite-content-ssfive .swiper-slide-active {
+    position: relative;
+    height: none;
+}
+
+.slide_favorite-content-ssfive .swiper-slide-active img {
+    width: 85% !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: unset;
+}
+
+.ssfive-big {
+    left: 18px;
+    height: 90%;
+}
+
+
+/* //section6 */
+
+.sssix-big {
+    left: 25px;
+    height: 110%;
+    bottom: 100px;
+}
+
+.swiper-slide-sssix {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 320px !important;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    /* margin: 0 27px; */
+}
+
+.swiper-slide-sssix img {
+    width: 70% !important;
+    margin: 0 auto;
+}
+
+.slide_favorite-content-sssix .swiper-slide-active {
+    position: relative;
+    height: none;
+}
+
+.slide_favorite-content-sssix .swiper-slide-active img {
+    width: 85% !important;
+}
+
+
+/* taro card */
+
+
+/* taro footer */
+
+.taro-footer {
+    background-image: url(../images/taro-bg-footer.png);
+    background-repeat-y: no-repeat;
+}
+
+@media (max-width: 400px) {
+    .taro-nav-right {
+        display: none;
+    }
+    .button-next,
+    .button-prev {
+        display: none;
+    }
+    .taro-banner-content {
+        padding: 10px;
+    }
+    .img-ss2-responsive {
+        padding: 0 50px;
+    }
+    .swiper-slide-ssfive {
+        width: 250px!important;
+    }
+    .taro-library_header-download {
+        display: none;
+    }
+    .swiper-slide-sssix {
+        width: 250px!important;
+    }
+}
